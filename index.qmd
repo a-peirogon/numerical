@@ -1,0 +1,3 @@
+# Prefacio {.unnumbered}
+
+Apuntes para la asignatura Métodos Numéricos. Estos apuntes no están libres de contener errores.

@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Métodos Numéricos con Python"
+  date: today
+  chapters:
+    - index.qmd
+    - 01_intro.qmd
+  search: true
+  repo-actions: [edit, issue, source]
+  downloads: [pdf]
+# language:
+#   label:
+#     fig: "Figura "
+#     tab: "Tabla "
+#   ui:
+#     chapter_name: ""
+
+# bibliography: references.bib
+
+format:
+  html:
+    comments: false
+    theme: cosmo
+    code-copy: true
+  pdf:
+    documentclass: scrreprt
+   # include-in-header: preamble.tex
+
+editor: source
+
+execute:
+  freeze: auto
+  
+comments:
+  hypothesis: true
+

@@ -1,0 +1,17 @@
+{
+  "hash": "7cb5204e2fa2b6ccf4dafdef2c125944",
+  "result": {
+    "engine": "knitr",
+    "markdown": "\n\n\n\n# Prefacio {.unnumbered}\n\nEl presente documento es la guía de estudio para la asignatura Métodos Numéricos de la Licenciatura en Estadística (Universidad Nacional de Rosario). Se ha utilizado como fuente para la creación de este material a la bibliografía mencionada en el [programa de la asignatura](https://portal.fcecon.unr.edu.ar/carreras/grado/licenciatura-en-estadistica/materia/metodos-numericos). La asignatura se complementa con variados materiales (prácticas, ejemplos, proyectos) disponibles en el aula virtual del curso de acceso privado.\n\nEstos apuntes no están libres de contener errores. Sugerencias para corregirlos o para expresar de manera más adecuada las ideas volcadas son siempre bienvenidas^[En general, no se cuenta con derechos para las imágenes empleadas (a menos que sean de creación propia). Ante cualquier problema, contactar al autor.].\n\nPrimera publicación: enero 2024.\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
