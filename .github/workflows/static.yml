@@ -44,10 +44,16 @@ jobs:
       - name: Render Quarto
         run: quarto render --to html
 
+      - name: Archive artifact
+        run: |
+          tar -cvf output.tar *.pdf
+      
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
-          path: _site   # o "docs" si lo configuraste así
+          name: site
+          path: "*.pdf"
+
 
   deploy:
     needs: build
