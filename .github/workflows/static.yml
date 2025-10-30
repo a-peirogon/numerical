@@ -42,7 +42,7 @@ jobs:
           version: '1.4.550'
 
       - name: Render Quarto
-        run: quarto render
+        run: quarto render --to html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
