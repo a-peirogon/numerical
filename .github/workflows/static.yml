@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,19 +42,14 @@ jobs:
         with:
           version: '1.4.550'
 
-      - name: Render Quarto
-        run: quarto render --to html
+      - name: Render Quarto site
+        run: quarto render
 
-      - name: Archive artifact
-        run: |
-          tar -cvf output.tar *.pdf
-      
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      # GitHub Pages expects compiled HTML here
+      - name: Upload built site
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: site
-          path: "*.pdf"
-
+          path: _site
 
   deploy:
     needs: build
@@ -62,6 +58,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
