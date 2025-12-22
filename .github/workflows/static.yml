@@ -34,6 +34,7 @@ jobs:
             "dplyr",
             "tidyr",
             "readr",
+            "reticulate",
             "stringr"
           ), repos="https://cloud.r-project.org")'
 
