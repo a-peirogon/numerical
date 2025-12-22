@@ -8,6 +8,12 @@ book:
   chapters:
     - index.qmd
     - 01_intro.qmd
+    - 02_ecuaciones.qmd
+    - 03_sistemas_lineales.qmd
+    - 04_sistemasnolineales.qmd
+    - 05_autovalores.qmd
+    - 06_aprox_polin_parte1.qmd
+    - 06_aprox_polin_parte2.qmd
   search: true
   repo-actions: [edit, issue, source]
   downloads: [pdf]
